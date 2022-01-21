@@ -23,7 +23,7 @@ DOT_COLOR2 = "yellow"
 DOT_COLOR3 = "white"
 MIDDOT_COLOR = "black"
 CENTERDOT_COLOR = "red"
-INITIALDELAY = 0# Time
+INITIALDELAY = .05# Time
 DELAYMOD = .9
 REPLAYCOLOR = "blue"
 SCOREINCREMENT = 10
@@ -35,7 +35,7 @@ POT_APPLES = 4 # snake can only eat apples until it starts following the tail
 REMOVE_SHORTCUT1 = False
 POT_APPLE_MULT = 1.2
 MAX_AREA_RATIO = .3
-END_GAME_MESSAGE = False
+END_GAME_MESSAGE = True
 
 # when moving down or up:
     # allow the snake to <move 1 left and turn around(shortcut)
