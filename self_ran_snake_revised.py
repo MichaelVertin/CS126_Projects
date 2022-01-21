@@ -44,7 +44,7 @@ SHORT_SUB = 0
 POT_APPLES = 4 # snake can only eat apples until it starts following the tail
 REMOVE_SHORTCUT1 = False
 POT_APPLE_MULT = 1.2
-END_GAME_MESSAGE = False
+END_GAME_MESSAGE = True
 
 # the main game
 def main():
