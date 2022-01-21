@@ -1,8 +1,12 @@
-# CREATE A "TARGET LOCATION"
-    # the snake does not need to assume the snake is in the way unless the snake is in that path
-        # or at the path from the end of that path
-
-        # if the snake is one up,one left from head, allow head to move 2 up to avoid that sitatation
+# This program is based off my previous 'self_san_snake'. 
+# rather than creating multiple functions that allow the snake the snake to 
+  # take certain paths when conditions were met, the direction is determined 
+  # by first calculating which of 4 directions (left, right, up, down), are 
+  # blocked. Of the possible options, the snake will determine which path
+  # will produce the quickest path to the apple. 
+# compared to the original 'self_ran_snake', the algorithm process of snake's direction
+  # is easier to understand, although it is less efficient because this snake
+  # currently only calculates the best path up to one square in advance. 
 
 import math
 import turtle
