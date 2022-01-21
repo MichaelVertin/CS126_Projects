@@ -5,7 +5,7 @@
   # blocked. Of the possible options, the snake will determine which path
   # will produce the quickest path to the apple. 
 # compared to the original 'self_ran_snake', the algorithm process of snake's direction
-  # is easier to understand, although it is less efficient because this snake
+  # significantly simpler, although it is less efficient because this snake
   # currently only calculates the best path up to one square in advance. 
 
 import math
