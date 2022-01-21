@@ -7,6 +7,8 @@
 # compared to the original 'self_ran_snake', the algorithm process of snake's direction
   # significantly simpler, although it is less efficient because this snake
   # currently only calculates the best path up to one square in advance. 
+# the code for this snake is slightly longer, although 300 lines are only to 
+  # create the main path
 
 import math
 import turtle
