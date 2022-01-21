@@ -1,26 +1,9 @@
-# if the apple is below the snake:
-    # only move down if the area between the apple and snake head is \
-                # less than one-third of the remaining board_space
-# allow for odd board_widths
-# create a 'respective board height' if the apple is left of the snake \
-    # and the entire snake is below the head y-val
-# remove area_check
-# if the snake is taking shortcut1:
-    # allow the snake to take shortcut1 again
-    # if snake_head is one from the top:
-        # if the apple is to the left of the snake:
-            # allow the snake to move to the left
-            # the snake does not move down until it is at an odd space
-# when the snake eats apple during shortcut:
-    # create a function that re-evaluates its options
-
-
-# WHEN CALCULATING PARTS IN WAY:(rather than including the top row):
-    # if the snake part is one away from the top:
-        # if a snake part is directly above that part:
-            # if the magnitude of difference between those two parts are equal to 1:
-                # add one to "parts in way"
-
+# this code includes code from my CS126 lab course, which allowed a user to 
+     # control snake movement using key presses.
+# this program plays a game of snake without user input
+  # started with a path that covered every square
+    # added 'shortcuts' that allow snake to move more efficiently
+    
 import turtle
 import sys
 import time
@@ -58,11 +41,11 @@ END_GAME_MESSAGE = False
     # allow the snake to <move 1 left and turn around(shortcut)
         # do not do this if a shortcut is already being used
 # create more functions to find shortcuts:
-# if the snake is moving horizontally:
-    # if no snake part is located under the head
-        # if the apple is located to the left of the head:
-            # start the snake moving downwards
-# apply buffer to more shortcuts
+  # allow snake to turn around (while moving downward) early
+  # after moves down toward apple, allow snake to continue moving
+    # down if there is an apple under the snake
+  # allow snake to move right, up, left if apple is directly to right of snake
+      # will need to adjust base direction to determine if caused obstacle after path
 
 # the main game
 def main():
